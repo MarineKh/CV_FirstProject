@@ -1,0 +1,368 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>CV</title>
+		<link rel="stylesheet" href="Content/Style/All.css"/>
+
+		<!-- <link rel="stylesheet" href="Content/Style/PrintPortrait.css"/>
+		<link rel="stylesheet" href="Content/Style/ProjectionLandscape.css"/> -->
+
+		<link rel="stylesheet" type="text/css" id="link" href="Content/Style/Print.css"/>
+		<link rel="shortcut icon" type="image/png" id="ico" href="Content/Icons/Print.png"/>
+		<script src="Content/Script/jquery.js"></script>
+		<script type="text/javascript" src="Content/Script/script.js"></script>
+	</head>
+	<body>
+		<main>
+		<div id="selectMedia">
+            <select id="mediaScreen" onchange="changeMedia(event)" class="screen">
+            	<option value="Print">Print</option>
+             	<option value="Projection">Projection</option>
+             	<option value="Braille">Braille</option>
+             	<option value="Tv">TV</option>
+                <option value="Tty">Tty</option>
+				<option value="Embossed">Embossed</option>
+				<option value="Handheld">Handheld</option>
+				<option value="Screen">Screen</option>
+            </select>
+        </div>
+		<!-- <audio controls autoplay>
+  			<source src="Content/Sound/Sheep.mp3" type="audio/mpeg" class="sheepSound">
+		</audio> -->
+			<div class="pulse1"></div>
+			<div class="pulse2"></div>
+			<div class="pulse3"></div>
+			<div class="label"></div>
+			<div class="cub">
+				<div class="fairy">
+					<img src="Content/Images/fairy.png" class="fairy"/>
+					<img src="Content/Images/handRight.png" class="handRight"/>
+					<img src="Content/Images/handLeft.png" class="handLeft"/>
+				</div>
+				<div class="container1">
+					<div class="cub1"></div>
+					<div class="cub2"></div>
+					<div class="cub3"></div>
+					<div class="cub4"></div>
+				</div>
+				<div class="container2">
+					<div class="cub5"></div>
+					<div class="cub6"></div>
+					<div class="cub7"></div>
+					<div class="cub8"></div>
+				</div>
+			</div>
+			<div class="window">
+				<div class="tvimg">
+					<img src="Content/Images/nbtn1.png" class="btn1"/>
+					<img src="Content/Images/nbtn1.png" class="btn2"/>
+					<img src="Content/Images/play.png" class="play"/>
+					<div id="on" onclick = "OnOff();"><img id="start" class="startimg"  src="Content/Images/btn.png"/></div>
+					<img src="Content/Images/poz1.png" class="poz1"/>
+					<img src="Content/Images/poz2.png" class="poz2"/>
+					<img src="Content/Images/bee.png" class="bee"/>
+				</div>
+				<div class="sheep">
+						<img src="Content/Images/foot1.png" class="foot1"/>
+						<img src="Content/Images/foot2.png" class="foot2"/>
+						<img src="Content/Images/foot3.png" class="foot3"/>
+						<img src="Content/Images/foot4.png" class="foot4"/>
+				</div>
+				<div class="rope">
+					<img src="Content/Images/holder1.png" class="knotRight"/>
+					<img src="Content/Images/holder1.png" class="knotLeft"/>
+					<!-- <img src="Content/Images/rubber.png" class="rubber">
+					<img src="Content/Images/holderYellow1.png" class="holderYellow1">
+					<img src="Content/Images/holderYellow.png" class="holderYellow">
+					<img src="Content/Images/penYellow.png" class="penYellow"> -->
+				</div> 
+				<table id="tb">
+					<caption><abbr>Curriculum Vitae</abbr></caption>
+					<tbody>
+						<tr>
+							<th></th>
+							<th>Full Name</th>
+							<td colspan="3"><lastname title="Lastname">Khloyan </lastname><firstname title="Firstname">Marine</firstname></td>
+							<td rowspan="4"><img class="image" src="Content/Images/img.png" alt="User name"/></td>
+						</tr>
+						<tr>
+							<th></th>
+							<th>Date of Birth</th>
+							<td colspan="3"><abbr title="Day">01 /</abbr><abbr title="Mounth">12 /</abbr><abbr title="Year">1995</abbr></td>
+						</tr>
+						<tr>
+							<th></th>
+							<th>Birth Place</th>
+							<td colspan="3"><country title="Country">Armenia </country><city title="City">Charentsavan</city></td>
+						</tr>
+						<tr>
+							<th></th>
+							<th>Nationality</th>
+							<td colspan="3">Armenia</td>
+						</tr>
+						<tr>
+							<th></th>
+							<th>Home Phone</th>
+							<td colspan="2"><abbr title="Home Phone"><a href="tel:0226 43782">(0226) 43782</a></abbr></td>
+							<th>Mobile Phone</th>
+							<td><abbr title="Mobile Phone"><a href="tel:098434878"> (098) 434878</a></abbr></td>
+						</tr>
+						<tr>
+							<th></th>
+							<th><abbr title="Electronic Mail">E-Mail</abbr></th>
+							<td colspan="2"><abbr title="Gmail"><a href="mailto:mkhloyan@gmail.com" target="_blank">mkhloyan@gmail.com</a></abbr></td>
+							<th>Skype</th>
+							<td><abbr title="Skype"><a href="#" target="_blank">mkhloyan</a></abbr></td>
+						</tr>
+						<tr>
+							<th></th>
+							<th>Proficiency Level</th>
+							<td colspan="4" title="Proficiency level">
+                                <q class="tyro">TYRO</q>,
+                                <q>beginner</q>,
+                                <q class="novis">novis</q>,
+                                rookie
+                            </td>
+						</tr>
+						<tr>
+							<th></th>
+							<th>Working Experience</th>
+							<td colspan="4">none</td>
+						</tr>
+						<tr class="ml">
+							<th></th>
+							<th><abbr title="Markup Language">ML </abbr>Prowess</th>
+							<td colspan="4">
+		                        <abbr class="smallText" title="EXtensible Markup Language"><a target="_blank" href="https://en.wikipedia.org/wiki/XML">XML,</a></abbr>
+		                        <abbr class="smallText" title="HTML Aplication"><a target="_blank" href="https://en.wikipedia.org/wiki/HTA">HTA,</a></abbr>
+		                        <abbr class="smallText" title="HyperText Markup Language"><a target="_blank" href="https://en.wikipedia.org/wiki/HTML">HTML,</a></abbr>
+		                        <abbr class="smallText" title="EXtensible HyperText Markup Language"><a target="_blank" href="https://en.wikipedia.org/wiki/XHTML">XHTML,</a></abbr>
+		                        <abbr class="smallText" title="Cascading Style Sheets"><a target="_blank" href="https://en.wikipedia.org/wiki/Cascading_Style_Sheets">CSS,</a></abbr>
+		                        <abbr class="smallText" title="Scalable Vector Graphics"><a target="_blank" href="https://en.wikipedia.org/wiki/Scalable_Vector_Graphics">SVG,</a></abbr>
+		                        <abbr class="smallText" title="XML User Interface Language"><a target="_blank" href="https://en.wikipedia.org/wiki/XUL">XUL,</a></abbr>
+		                        <abbr class="smallText" title="XML Path Language"><a target="_blank" href="https://en.wikipedia.org/wiki/XPath">XPath,</a></abbr>
+		                        <abbr class="smallText" title="XML Linking Language"><a target="_blank" href="https://en.wikipedia.org/wiki/XLink">XLink</a></abbr>
+	                        </td>
+						</tr>
+						<tr class="progSkill">
+							<th></th>
+							<th>Programming Skills</th>
+							<td colspan="4">
+								<abbr title="JS Wikipedia"><a href="https://en.wikipedia.org/wiki/JavaScript" target="_blank">JavaScript,</a></abbr>
+								<abbr title="C Wikipedia"><a href="https://en.wikipedia.org/wiki/C_(programming_language)" target="_blank">C,</a></abbr>
+								<abbr title="AJAX Wikipedia"><a href="https://en.wikipedia.org/wiki/Ajax_(programming)" target="_blank">AJAX,</a></abbr>
+								<abbr title="jQuery Wikipedia"><a href="https://en.wikipedia.org/wiki/JQuery" target="_blank">jQuery,</a></abbr>	
+								<abbr title="Objective C Wikipedia"><a href="https://en.wikipedia.org/wiki/Objective-C" target="_blank">Objective C</a></abbr>
+							</td>			
+						</tr>
+						<tr>
+							<td colspan="6" class="newForm">
+								<form>
+									<fieldset>
+										<legend>Programing Prowess</legend>
+										<section>
+											<label for="OOPLang"><acronym title="Oject Oriented Programing">OOP</acronym>Languages</label>
+											<select id="OopLang" name="OopLang" multiple="multiple" size="5">
+												<optgroup value="C-LIKE" label="C-LIKE">
+													<option value="Objective C">Objective C</option>
+                                                	<option value="C++">C++</option>
+                                                	<option value="C#">C#</option>
+												</optgroup>
+											 	<option value="Java">Java</option>
+                                                <option value="VB">VB</option>
+                                                <option value="Pascal">Pascal</option>
+                                                <option value="Delphi">Delphi</option>
+                                                <option value="Python">Python</option>
+											</select>
+										</section>
+										<section>
+											 <label for="FunctionalScripts">Functional Scripts</label>
+                                                <select id="FunctionalScripts" name="FunctionalScripts" size="5" >
+                                                    <optgroup label="FLASH">
+                                                        <option value="Action Script">Action Script</option>
+                                                    </optgroup>
+                                                    <optgroup label="JS">
+                                                        <option value="JScript">JScript</option>
+                                                        <option value="Ecma Script">Ecma Script</option>
+                                                        <option value="Java Script">Java Script</option>
+                                                    </optgroup>
+                                                    <optgroup label="VB">
+                                                        <option value="VB Script">VB Script</option>
+                                                    </optgroup>
+                                                    <optgroup label="OTHER">
+                                                        <option value="PHP">PHP</option>
+                                                        <option value="LISP">LISP</option>
+                                                        <option value="COBOL">COBOL</option>
+                                                        <option value="Ruby">Ruby</option>
+                                                        <option value="REXX">REXX</option>
+                                                        <option value="PERL">PERL</option>
+                                                    </optgroup>
+                                                </select>
+										</section>
+										<section>
+                                            <label for="MLPowers" class="mlPowers"><abbr title="MarkUp Language">ML</abbr>Prowess</label>
+                                            <input list="MLPowers" name="MLPowers" />
+                                            <input list="MLPowers" name="MLPowers" />
+                                            <input list="MLPowers" name="MLPowers" />
+                                            <datalist id="MLPowers">
+                                                <option value="Java">Java</option>
+                                                <option value="VB">VB</option>
+                                                <option value="Pascal">Pascal</option>
+                                                <option value="Delphi">Delphi</option>
+                                                <option value="Python">Python</option>
+                                            </datalist>
+                                        </section>
+                                       <section id="check">
+                                            <label>Models</label>
+                                                <div class="first_checkbox">
+                                                    <label class="first_checkbox_lbl" for="bom"><acronym title="Browser Object Model" moniker-href="https://en.wikipedia.org/wiki/Browser_Object_Model">BOM</acronym></label>
+                                                    <div class="scnd_checkbox"><input type="checkbox" id="bom" name="bom" value="bom" /></div>
+                                                </div>
+                                                <div class="first_checkbox">
+                                                    <label class="first_checkbox_lbl" for="dom"><acronym title="Browser Object Model" moniker-href="https://www.w3.org/2002/07/26-dom-article.html">DOM</acronym></label>
+                                                    <div class="scnd_checkbox"><input type="checkbox" id="dom" name="dom" value="dom" /></div>
+                                                </div>
+                                                <div class="first_checkbox">
+                                                    <label class="first_checkbox_lbl" for="cssom"><acronym title="Browser Object Model" moniker-href="https://www.w3.org/TR/cssom-1/">CSSOM</acronym></label>
+                                                    <div class="scnd_checkbox"><input type="checkbox" id="cssom" name="cssom" value="cssom" /></div>
+                                                </div>
+                                        </section>
+                                        <section>
+                                            <label for="Storage">Storage</label>
+                                                <div class="first_radio">
+                                                    <label class="first_radio_lbl" for="mysql">My SQL</label>
+                                                    <div class="scnd_radio"><input type="radio" id="mysql" name="Storage" value="mysql" checked="checked" /></div>
+                                                </div>
+                                                <div class="first_radio">
+                                                    <label class="first_radio_lbl" for="mssql">MS SQL</label>
+                                                    <div class="scnd_radio"><input type="radio" id="mssql" name="Storage" value="mssql" /></div>
+                                                </div>
+                                                <div class="first_radio">
+                                                    <label class="first_radio_lbl" for="oracle">Oracle</label>
+                                                    <div class="scnd_radio"><input type="radio" id="oracle" name="Storage" value="oracle" /></div>
+                                                </div>
+                                        </section>
+                                	    <section>
+                                			<label for="JSLibs"><acronim title="Java Script Libraries">JS Libs</acronim></label>
+                                            <select id="JSLibs1" name="JSLibs1" size="1"></select>
+                                            <select id="JSLibs2" name="JSLibs2" size="1"></select>
+                                            <select id="JSLibs3" name="JSLibs3" size="1"></select>
+                                        </section>
+									</fieldset>
+								</form>
+							</td>
+						</tr>
+						<tr>
+							<th></th>
+							<th>Other</th>
+							<td  colspan="4">Volleyball, bicycle</td>
+						</tr>
+					</tbody>
+					<tbody>
+						<tr>
+							<th colspan="2">Languages</th>
+                        	<th>Readding</th>
+                        	<th>Writing</th>
+                        	<th>Comunication</th>
+                        	<th>Understanding</th>
+						</tr>
+						<tr>
+							<th colspan="2">Armenian</th>
+							<td>  
+								<select>
+									<option title="Advanced" value="advanced">Advanced</option>
+									<option title="Intermediate" value="intermediate">Intermediate</option>
+									<option title="Beginner" value="beginner">Beginner</option>
+								</select>
+							</td>
+							<td>  
+								<select>
+									<option title="Advanced" value="advanced">Advanced</option>
+									<option title="Intermediate" value="intermediate">Intermediate</option>
+									<option title="Beginner" value="beginner">Beginner</option>
+								</select>
+							</td>
+							<td>  
+								<select>
+									<option title="Advanced" value="advanced">Advanced</option>
+									<option title="Intermediate" value="intermediate">Intermediate</option>
+									<option title="Beginner" value="beginner">Beginner</option>
+								</select>
+							</td>
+							<td>  
+								<select>
+									<option title="Advanced" value="advanced">Advanced</option>
+									<option title="Intermediate" value="intermediate">Intermediate</option>
+									<option title="Beginner" value="beginner">Beginner</option>
+								</select>
+							</td>
+						</tr>
+						<tr>
+							<th colspan="2">Russian</th>
+							<td>  
+								<select>
+									<option title="Advanced" value="advanced">Advanced</option>
+									<option title="Intermediate" value="intermediate">Intermediate</option>
+									<option title="Beginner" value="beginner">Beginner</option>
+								</select>
+							</td>
+							<td>  
+								<select>
+									<option title="Intermediate" value="intermediate">Intermediate</option>
+									<option title="Advanced" value="advanced">Advanced</option>
+									<option title="Beginner" value="beginner">Beginner</option>
+								</select>
+							</td>
+							<td>  
+								<select>
+									<option title="Advanced" value="advanced">Advanced</option>
+									<option title="Intermediate" value="intermediate">Intermediate</option>
+									<option title="Beginner" value="beginner">Beginner</option>
+								</select>
+							</td>
+							<td>  
+								<select>
+									<option title="Advanced" value="advanced">Advanced</option>
+									<option title="Intermediate" value="intermediate">Intermediate</option>
+									<option title="Beginner" value="beginner">Beginner</option>
+								</select>
+							</td>
+						</tr>
+						<tr>
+							<th  colspan="2">English</th>
+							<td>  
+								<select>
+									<option title="Intermediate" value="intermediate">Intermediate</option>
+									<option title="Advanced" value="advanced">Advanced</option>
+									<option title="Beginner" value="beginner">Beginner</option>
+								</select>
+							</td>
+							<td>  
+								<select>
+									<option title="Intermediate" value="intermediate">Intermediate</option>
+									<option title="Advanced" value="advanced">Advanced</option>
+									<option title="Beginner" value="beginner">Beginner</option>
+								</select>
+							</td>
+							<td>  
+								<select>
+									<option title="Intermediate" value="intermediate">Intermediate</option>
+									<option title="Advanced" value="advanced">Advanced</option>
+									<option title="Beginner" value="beginner">Beginner</option>
+								</select>
+							</td>
+							<td>  
+								<select>
+									<option title="Intermediate" value="intermediate">Intermediate</option>
+									<option title="Advanced" value="advanced">Advanced</option>
+									<option title="Beginner" value="beginner">Beginner</option>
+								</select>
+							</td>
+						</tr>
+					</tbody>
+				</table>
+			</div> <!-- window end -->
+		</main>
+        <div id="switch_on_off" class="switch" onclick="OnOff();"></div>
+	</body>
+</html>

@@ -1,0 +1,113 @@
+@media screen and (min-width: 2380px) {
+    tbody:nth-of-type(1) th, tbody:nth-of-type(1) td {
+        font-size: 5px;
+    }
+    tbody:nth-of-type(1) a {
+        font-size: 5px;
+    }
+    tbody:nth-of-type(2) th, tbody:nth-of-type(2) td {
+        font-size: 5px;
+    }
+    tbody:nth-of-type(1) tr::before {
+        font-size: 5px;
+    }
+    tbody:nth-of-type(2) select {
+        font-size: 5px;
+    }
+}
+@font-face {
+    font-family: caption;
+    src: url(../Fonts/hand.ttf);
+}
+@font-face {
+    font-family: td;
+    src: url(../Fonts/JaspersHandwriting.ttf);
+}
+body {
+	background-image: url(../Images/bgEnvelopment.jpg);
+	background-size: cover;
+}
+.window {
+	height: 490px;
+	width: 1000px;
+
+	padding-top: 70px;
+	margin: auto;
+
+	background-image: url(../Images/envelope1.png);
+}
+table {
+	position: relative;
+	margin: auto;
+	margin-right: 175px;
+}
+table::before {
+    height: 100px;
+    width: 100px;
+
+    position: absolute;
+    top: 15px;
+    left: 790px;
+
+    content: "";
+    background: url(../Images/stamp.png);
+    background-size: cover;
+    display: inline-block;
+
+    transform: rotate(60deg);
+    animation: stamp 3s ease-in;
+}
+td {
+	height: 25px;
+	color: #647a88;
+	font-family: td;
+	font-weight: bold;
+}
+a {
+	color: #647a88;
+	font-family: td;
+	font-weight: bold;
+	text-decoration: underline;
+}
+th {
+	width: 135px;
+	color: #c25c55;
+	font-family: td;
+	font-weight: bold;
+	padding-right: 10px;
+}
+tbody:nth-of-type(1) th:first-child:before {
+	display: none;
+}
+caption {
+	color: #647a88;
+	font-family: caption;
+	font-size: 35px;
+	padding: 0 0 20px 160px;
+}
+select {
+	width: 120px;
+    color: #647a88;
+    font-family: td;
+    font-size: 12px;
+}
+.screen {
+	height: 25px;
+    width: 140px;
+	color: #556d81;
+    font-family: caption;
+	box-shadow: 2px 1px 3px black, -3px 5px 9px black, -1px -1px 30px black;                
+}
+.puls1, .puls2, .puls3, .label, .cub, .tvimg, .ml, .progSkill, .sheep, .rope, .newForm {
+    display: none;
+}
+@keyframes stamp {
+    0%, 70% {
+        transform: scale(5) rotate(25deg);
+        opacity: 0;
+    }
+    100% {
+        transform: scale(1) rotate(60deg);
+        opacity: 1;
+    }
+}

@@ -1,0 +1,300 @@
+@media screen and (min-width: 2130px) {
+    tbody:nth-of-type(1) th, tbody:nth-of-type(1) td {
+        font-size: 8px;
+    }
+    tbody:nth-of-type(1) a {
+        font-size: 8px;
+    }
+    tbody:nth-of-type(2) th, tbody:nth-of-type(2) td {
+        font-size: 8px;
+    }
+    tbody:nth-of-type(1) section:nth-of-type(3) input {
+        height: 5px;
+        width: 40px;
+        padding: 10px 0;
+    }
+    tbody:nth-of-type(1) select {
+        overflow: hidden;
+        font-size: 5px;
+    }
+    tbody:nth-of-type(1) label {
+        font-size: 5px;
+    }
+    tbody:nth-of-type(2) select {
+        font-size: 5px;
+    }
+    fieldset option {
+         font-size: 8px;
+    }
+   label {
+        font-size: 5px;
+    }
+
+}
+@font-face {
+    font-family: th;
+    src: url(../Fonts/Sketc.ttf);
+}
+body {
+    background-color: #cbd4c7;
+}
+body::-webkit-scrollbar {
+    width: 12px;
+}
+body::-webkit-scrollbar-thumb {
+    background-color: #423d3d;
+    border-radius: 10px;
+    -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.5);
+}
+.window {
+    height: 550px;
+    width: 1200px;
+
+    position: relative;
+    margin: auto;
+
+    background-image: url(../Images/background.jpg);
+    background-size: cover;
+
+    padding-top: 93px;
+
+    -webkit-animation:move 1.5s;
+    -webkit-animation-iteration-count: 1;
+    -webkit-animation-timing-function: ease-in;
+    -webkit-animation-fill-mode: forwards;
+
+    -moz-animation:move 1.5s;
+    -moz-animation-iteration-count: 1;
+    -moz-animation-timing-function: ease-in;
+    -moz-animation-fill-mode: forwards;
+
+    animation: move 1.5s;
+    animation-iteration-count: 1;
+    animation-timing-function: ease-in;
+    animation-fill-mode: forwards
+}
+.window::before{
+    height: 100vh;
+    width: 24px;
+
+    position: absolute;
+    z-index: -1;
+    top: -21px;
+    left: 1015px;
+
+    content: ''; 
+    background-image: url(../Images/Rope.png);
+    background-repeat: repeat;
+    display: inline-block;
+
+    transform: translateY(-100%);
+}
+.window::after {
+    height: 100vh;
+    width: 24px;
+
+    position: absolute;
+    z-index: -1;
+    top: -30px;
+    left: 127px;
+
+    content: ''; 
+    background-image: url(../Images/Rope.png);
+    display: inline-block;
+    background-repeat: repeat;
+
+    transform: translateY(-100%);
+}
+table {
+    position: relative;
+    margin: auto;
+}
+tbody:nth-of-type(1) th:first-child:before {
+	display: none;
+}
+th {
+    color: #75e3e9;
+    font-family: th;
+    text-shadow: 0px 1px 43px #664b04;
+    box-shadow: 20px 1px 44px #5c788e;
+    padding-right: 10px;
+}
+td, a {
+    color: white;
+    font-family: th;
+    text-shadow: 0px 1px 43px #664b04;
+    box-shadow: 20px 1px 44px #5c788e;
+}
+td {
+    padding-left: 5px;
+}
+.knotRight {
+    position: absolute;
+    top: -34px;
+    left: 100px;
+}
+.knotLeft {
+    position: absolute;
+    top: -34px;
+    left: 990px;
+}
+
+label {
+    width: 60px;
+    display: table;
+    white-space: nowrap;
+}
+fieldset label:nth-of-type(1) {
+    color: white;
+    font-weight: bold;
+}
+fieldset {
+    height: 120px;
+    border: 2px dotted white;
+    padding: 10px 10px 25px 10px;
+}
+section {
+    display: table-cell;
+}
+select:nth-of-type(1) {
+    width: 100px;
+    border-radius: 5px;
+    padding-top: 3px;
+    padding-left: 6px;
+}
+option:nth-of-type(1) {
+    text-align: left;
+}
+tbody:nth-of-type(1) select {
+    width: 152px;
+    font-size: 12px;
+    font-weight: bold;
+    background-color: transparent;
+    border: 1px dotted white;
+}
+tbody:nth-of-type(1) tr:nth-of-type(12) th:nth-of-type(2),
+tbody:nth-of-type(1) tr:nth-of-type(12) td:nth-of-type(1) {
+    padding-top: 5px;
+}
+tbody:nth-of-type(1) select:nth-of-type(1),
+tbody:nth-of-type(1) section:nth-of-type(4) acronym , 
+optgroup,
+legend  {
+    color: white;
+}
+acronym {
+    cursor: pointer;
+}
+tbody:nth-of-type(1) section:nth-of-type(3) input {
+    height: 22px;
+    color: white;
+    display: table;
+    background: transparent;
+    border: 1px solid white;
+    border-radius: 5px;
+    padding: 2px 10px;
+}
+[type=checkbox]:indeterminate {
+    outline: 2px dotted black;
+    outline-offset: 3px;
+}
+[type=checkbox]:checked {
+    outline: 2px dotted #423d3d;
+    outline-offset: 3px;
+}
+[type=checkbox] {
+    outline: 2px dotted white;
+    outline-offset: 3px;
+}
+select::-webkit-scrollbar {
+    width: 12px;
+}
+select::-webkit-scrollbar-track {
+    -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3); 
+    border-radius: 7px;
+}
+select::-webkit-scrollbar-thumb {
+    border-radius: 7px;
+    -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.5); 
+}
+.rightSide {
+    height: 58px;
+    width: 156px;
+
+    position: absolute;
+    left: 20px;
+
+    background-repeat: repeat-x;
+}
+.first_checkbox {
+    width: 85px;
+    display: table;
+    text-align: right;
+}
+.scnd_checkbox, .scnd_radio {
+    display: table-cell;
+}
+.first_radio {
+    width: 90px;
+    display: table;
+    text-align: right;
+}
+#JSLibs1, #JSLibs2, #JSLibs3 {
+    width: 100px;
+    margin-top: 5px;
+    display: table;
+    border-radius: 1px;
+}
+.first_radio_lbl {
+    cursor: pointer;
+    white-space: nowrap;
+}
+.image {
+    border: 5px dotted #423d3d;;
+
+    -webkit-filter:hue-rotate(3602deg);
+    -moz-filter:hue-rotate(3602deg);
+    filter:hue-rotate(3602deg);
+}
+.mlPowers {
+    padding-left: 5px;
+}
+tbody:nth-of-type(1) section:nth-of-type(5) {
+    padding-left: 15px;
+}
+tbody:nth-of-type(2) select {
+    width: 143px;
+    color: white;
+    font-weight: bold;
+    background: transparent;
+    text-align-last: center;
+    border: 1px solid;
+}
+.screen {
+    height: 18px;
+    color: #013664;
+    font-family: th;
+    font-size: 15px;
+}
+caption, .puls1, .puls2, .puls3, .label, .cub, .tvimg, .ml, .progSkill, .sheep {
+    display: none;
+}
+
+@-webkit-keyframes move {
+    0% {top: -600px;}
+    85% {top: 0;}
+    95% {top: -5px;}
+    100% {top: 0;}
+}
+@-moz-keyframes move {
+    0% {top: -600px;}
+    85% {top: 0;}
+    95% {top: -5px;}
+    100% {top: 0;}
+}
+@keyframes move {
+    0% {top: -600px;}
+    80% {top: 0;}
+    90% {top: -5px;}
+    100% {top: 0;}
+}

@@ -1,0 +1,82 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+	background-size: cover;
+	display: table;
+}
+caption {
+	height: 80px;
+	padding-top: 40px;
+	color: gray;
+	font-size: 28px;
+	font-weight: bold;
+	border: 1px solid black;
+	-webkit-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+	user-select: none;
+}
+option {
+	text-align: center;
+}
+.window {
+	width: 800px;
+	margin: auto;
+}
+table {
+	padding: 10px 25px 10px 15px;
+	border: 1px solid black;
+	counter-reset: section;	
+}
+table th, tr, td {
+	border: 1px solid black;
+}
+tbody:nth-of-type(1) th:first-child:before {
+	counter-increment: section;
+	content: " " counter(section) ". ";
+}
+tbody:nth-of-type(1) th:nth-of-type(2){
+ 	width: 200px;
+}
+tbody td {
+	padding-left: 10px;
+}
+tbody:nth-of-type(1) th {
+	padding-right: 15px;
+	text-align: right;
+	background: gray;
+}
+tbody:nth-of-type(1) th:first-child {
+	background-color: #f99;	
+}
+tbody:nth-of-type(1),tbody:nth-of-type(2) {
+	width: 100%;
+	display: table;
+}
+tbody:nth-of-type(2) {
+	padding-top: 10px;
+}
+tbody:nth-of-type(2) td {
+	text-align: center;
+}
+a {
+	text-decoration: none;
+}
+abbr {
+	margin: 3px;
+}
+select {
+	width: 100px;
+	border: 1px solid black;
+}
+.image {
+	height: 80px;
+	width: 80px;
+}
+.cub, .pulse1, .pulse2, .pulse3, .label, .tvimg, .newForm, .sheep, .rope {
+	display: none;
+}
+

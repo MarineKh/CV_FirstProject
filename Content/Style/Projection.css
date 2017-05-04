@@ -1,0 +1,216 @@
+@media screen and (min-width: 2000px) {
+    tbody:nth-of-type(1) th, tbody:nth-of-type(1) td {
+        font-size: 8px;
+    }
+    tbody:nth-of-type(1) a {
+        font-size: 8px;
+    }
+    tbody:nth-of-type(2) th, tbody:nth-of-type(2) td {
+        font-size: 8px;
+    }
+    tbody:nth-of-type(2) select {
+        font-size: 8px;
+    }
+}
+@font-face {
+    font-family: newfont;
+    src: url(../Fonts/Strawberry.ttf);
+}
+@font-face {
+    font-family: born;
+    src: url(../Fonts/BornAddict.ttf);
+}
+body {
+	background-color: #d2aea5;
+}
+.window {
+    height: 900px;
+    width: 783px;
+
+	position: relative;
+	margin: auto;
+    background-image: url(../Images/beer1.png); 
+    background-size: cover;
+    padding: 20px 60px 20px 60px;
+}
+caption {
+    color: #cd8d68;
+    font-family: born;
+    font-size: 45px;
+    padding: 230px 0 35px 0;
+}
+table {
+	position: relative;
+    margin: auto;
+    
+    font-size: 23px;
+}
+.sheep {
+	height: 600px;
+    width: 182px;
+
+    position: absolute;
+    z-index: 1;
+    top: 150px;
+    right: 830px;
+
+    content: ''; 	
+	background-image: url(../Images/sheepPen.png);
+	background-size: cover;
+
+    display: inline-block;
+
+    -webkit-transition: transform 2s;
+    -moz-transition: transform 2s;
+    transition: transform 2s;
+}
+.sheep:hover {
+    -webkit-transform:rotate(30deg);
+    -moz-transform:rotate(30deg);
+	transform:rotate(30deg);
+}
+th {
+    color: #64411f;
+	font-family: newfont;
+    font-size: 15px;
+    text-shadow: 0px 0px 43px #664b04;
+}
+td {
+    color: #cd8d68;
+	font-family: newfont;
+	font-size: 15px;
+    text-shadow: 0px 1px 43px #664b04;
+    padding-left: 12px;
+}
+tbody:nth-of-type(1) th:nth-of-type(2) {
+    padding-left: 10px;
+}
+a {
+    color: #cd8d68;
+    text-decoration: underline;
+}
+.screen {
+    height: 22px;
+    width: 120px;
+    font-size: 15px;
+}
+select {
+    width: 80px;
+    font-family: newfont;
+    font-size: 10px;
+    text-align-last: center;
+    text-shadow: 0px 1px 0 #edcba0;
+}
+.foot1 {
+    position: absolute;
+    top: 105px;
+    right: 164px;
+    
+    -webkit-animation: shake 0.82s cubic-bezier(.36,.07,.19,.97) infinite;
+    -moz-animation: shake 0.82s cubic-bezier(.36,.07,.19,.97) infinite;
+    animation: shake 0.82s cubic-bezier(.36,.07,.19,.97) infinite;
+
+    -webkit-transform: translate3d(0, 0, 0);
+    -moz-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+
+    backface-visibility: hidden;
+    perspective: 1000px;
+   
+}
+.foot2 {
+    position: absolute;
+    top: 114px;
+    right: 143px;
+
+    -webkit-animation: shake 0.82s cubic-bezier(.36,.07,.19,.97) infinite;
+    -moz-animation: shake 0.82s cubic-bezier(.36,.07,.19,.97) infinite;
+    animation: shake 0.82s cubic-bezier(.36,.07,.19,.97) infinite;
+
+    -webkit-transform: translate3d(0, 0, 0);
+    -moz-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+
+    backface-visibility: hidden;
+    perspective: 1000px;
+}
+.foot4 {
+    position: absolute;
+    top: 117px;
+    right: 100px;
+
+    -webkit-animation: shake 0.82s cubic-bezier(.36,.07,.19,.97) infinite;
+    -moz-animation: shake 0.82s cubic-bezier(.36,.07,.19,.97) infinite;
+    animation: shake 0.82s cubic-bezier(.36,.07,.19,.97) infinite;
+
+    -webkit-transform: translate3d(0, 0, 0);
+    -moz-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+
+    backface-visibility: hidden;
+    perspective: 1000px;
+}
+.foot3 {
+    position: absolute;
+    z-index: 3;
+    top: 114px;
+    right: 74px;
+    animation: shake 0.82s cubic-bezier(.36,.07,.19,.97) infinite;
+    transform: translate3d(0, 0, 0);
+    backface-visibility: hidden;
+    perspective: 1000px;
+}
+@-webkit-keyframes shake {
+  10%, 90% {
+    -webkit-transform: translate3d(-1px, 0, 0);
+  }
+  
+  20%, 80% {
+    -webkit-transform: translate3d(1px, 0, 0);
+  }
+
+  30%, 50%, 70% {
+    -webkit-transform: translate3d(-2px, 0, 0);
+  }
+
+  40%, 60% {
+    -webkit-transform: translate3d(2px, 0, 0);
+  }
+} 
+@-moz-keyframes shake  {
+  10%, 90% {
+    -moz-transform: translate3d(-1px, 0, 0);
+  }
+  
+  20%, 80% {
+    -moz-transform: translate3d(1px, 0, 0);
+  }
+
+  30%, 50%, 70% {
+    -moz-transform: translate3d(-2px, 0, 0);
+  }
+
+  40%, 60% {
+    -moz-transform: translate3d(2px, 0, 0);
+  }
+}
+@keyframes shake {
+  10%, 90% {
+    transform: translate3d(-1px, 0, 0);
+  }
+  
+  20%, 80% {
+    transform: translate3d(1px, 0, 0);
+  }
+
+  30%, 50%, 70% {
+    transform: translate3d(-2px, 0, 0);
+  }
+
+  40%, 60% {
+    transform: translate3d(2px, 0, 0);
+  }
+}
+.pulse1, .pulse2, .pulse3, .label, .cub, .tvimg, .newForm, .rope {
+    display: none;
+}

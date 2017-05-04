@@ -1,0 +1,224 @@
+@media screen and (min-width: 2278px) {
+    tbody:nth-of-type(1) th, tbody:nth-of-type(1) td {
+        font-size: 8px;
+    }
+    tbody:nth-of-type(1) a {
+        font-size: 8px;
+    }
+    tbody:nth-of-type(2) th, tbody:nth-of-type(2) td {
+        font-size: 8px;
+    }
+    tbody:nth-of-type(2) select {
+        font-size: 8px;
+    }
+}
+@font-face {
+    font-family: caption;
+    src: url(../Fonts/SilkRemingto.ttf);
+}
+@font-face {
+    font-family: th;
+    src: url(../Fonts/Strawberry.ttf);
+}
+@font-face {
+    font-family: td;
+    src: url(../Fonts/Strawb.ttf);
+}
+body {
+	background-image: url(../Images/bg.jpg);
+	background-size: cover;
+}
+.window {
+	width: 700px;
+
+	position: relative;
+	margin: auto;
+
+	background-color: #1f5f7a;
+	opacity: 0.9;
+	border: 2px solid #c9c938;
+	border-radius: 35px;
+	box-shadow: 10px 10px 5px #2b3b4b;
+	padding: 30px;
+}
+caption {
+	color: #285a55;
+	font-weight: bold;
+	font-size: 35px;
+	font-family: caption;
+	text-shadow: -1px -1px 1px #96c5c0, 1px 1px 1px #96c5c0;
+}
+a {
+	color: #285a55;
+	text-shadow: 1px 1px 1px #664b04;
+}
+table {
+	margin: auto;
+	background-color: #dbe2e1;
+	border: 2px solid #466287;
+	border-radius: 35px;
+	padding: 20px;
+}
+tbody:nth-of-type(1) th:nth-of-type(2) {
+	padding: 0 5px;
+}
+tbody:nth-of-type(2) th {
+	padding-right: 5px;
+}
+th {
+	font-family: th;
+	text-shadow: 0px 2px 0px #96c5c0, 1px 1px 1px #96c5c0
+}
+td {
+	color: #285a55;
+	font-family: td;
+	text-shadow: 1px 1px 1px #664b04;
+}
+.img {
+	position: fixed;
+	top: 20px;
+	margin-left: 110px;
+}
+.image {
+    -webkit-filter:hue-rotate(7610deg);
+    -moz-filter:hue-rotate(7610deg);
+    filter:hue-rotate(7610deg);
+}
+select {
+	color: #285a55;
+	background: transparent;
+	text-shadow: 1px 1px 1px #664b04;
+	font-family: td;
+}
+.fairy {
+	height: 150px;
+    width: 150px;
+
+	position: fixed;
+	top: 30px;
+	left: 120px;
+}
+.handLeft {
+	height: 60px;
+	width: 60px;
+
+	position: absolute;
+	z-index: -1;
+	left: 112px;
+	animation-name: down;
+	animation-duration: 2s;
+	animation-iteration-count: infinite;
+}
+.handRight {
+	height: 60px;
+	width: 60px;
+
+	position: absolute;
+	z-index: -1;
+    top: -13px;
+    left: -22px;
+    animation-name: down;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+}
+.screen {
+	width: 100px;
+	background: #c7cfd0;
+    font-size: 15px;
+}
+@keyframes down {
+	0% {
+		transform: translateY(0px);
+	}
+	50% {
+		transform: translateY(5px);
+	}
+	100% {
+		transform: translateY(0px);
+	}
+}
+.container1 {
+	width: 80px;
+	height: 80px;
+
+	position: fixed;
+	top: 130px;
+    left: 150px;
+
+	animation: rotateBig 8s linear infinite;
+	transform-style: preserve-3d; 
+ 	transform: rotateY(30deg) rotateX(5deg); 
+}
+.container2 {
+	width: 40px;
+	height: 40px;
+
+	position: fixed;
+	top: 146px;
+    left: 166px;
+
+	animation: rotateSmall 1s linear infinite;
+	transform-style: preserve-3d; 
+ 	transform: rotateY(-30deg) rotateX(-5deg); 
+}
+.cub1, .cub2, .cub3, .cub4 {
+	height: 100%;
+	width: 100%;
+
+	position: absolute;
+
+	border: 2px solid yellow;
+}
+.cub5, .cub6, .cub7, .cub8 {
+	height: 100%;
+	width: 100%;
+
+	position: absolute;
+
+	border: 2px solid #c8d0d1;
+}
+.cub1 { 
+	background-color: black;
+	opacity: .4;
+	transform: rotateY(0deg) translateZ(40px); 
+} 
+.cub2 { 
+	background-color: black;
+	opacity: .4;
+	transform: rotateY( 90deg) translateZ(40px); 
+}
+.cub3 { 
+	background-color: black;
+	opacity: .4;
+	transform: rotateY(180deg) translateZ(40px); 
+}
+.cub4 {
+	background-color: black;
+	opacity: .4; 
+	transform: rotateY(270deg) translateZ(40px); 
+}
+.cub5 { 
+ 	transform: rotateY(0deg) translateZ(20px); 
+} 
+.cub6 { 
+	transform: rotateY( -90deg) translateZ(20px); 
+}
+.cub7 { 
+	transform: rotateY(-180deg) translateZ(20px); 
+}
+.cub8 { 
+	transform: rotateY(-270deg) translateZ(20px); 
+}
+@keyframes rotateBig {
+	to { 
+    transform: rotateY(-330deg) rotateX(370deg); 
+  } 
+}
+@keyframes rotateSmall {
+	to { 
+    transform: rotateY(-90deg) rotateX(370deg); 
+  } 
+}
+.puls1, .puls2, .puls3, .label, .tvimg, .newForm, .sheep, .rope {
+	display: none;
+}
